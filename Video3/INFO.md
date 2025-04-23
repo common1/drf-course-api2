@@ -26,5 +26,6 @@ Django REST Framework - Serializers & Response objects | Browsable API
 Django REST Framework- Nested Serializers, SerializerMethodField and Serializer Relations
 [https://www.youtube.com/watch?v=KfSYadIFHgY&list=PL-2EBeDYMIbTLulc9FSoAXhbmXpLq2l5t&index=3]
 
-Current 1:07
+# Video 3 - Part 2
 
+...
