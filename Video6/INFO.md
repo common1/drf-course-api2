@@ -62,3 +62,9 @@ urlpatterns = [
 
 $ python manage.py migrate
 ```
+
+# Video 6 - Part 1
+
+Django REST Framework - Generic Views | ListAPIView & RetrieveAPIView
+[https://www.youtube.com/watch?v=vExjSChWPWg&list=PL-2EBeDYMIbTLulc9FSoAXhbmXpLq2l5t&index=6]
+
