@@ -79,3 +79,7 @@ $ python manage.py createsuperuser
 
 Current: 1:31
 
+# Video 7 - Part 2
+
+...
+
