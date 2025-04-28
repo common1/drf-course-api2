@@ -115,5 +115,7 @@ Django REST Framework - JWT Authentication with djangorestframework-simplejwt
 Authentication
 [https://www.django-rest-framework.org/api-guide/authentication/#authentication]
 
-Current: 2:42
+# Video 12 - Part 2
+
+Current: 4:07
 
