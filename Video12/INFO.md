@@ -117,5 +117,21 @@ Authentication
 
 # Video 12 - Part 2
 
-Current: 4:07
+JSON Web Token Authentication
+[https://www.django-rest-framework.org/api-guide/authentication/#json-web-token-authentication]
+
+jazzband/djangorestframework-simplejwt
+[https://github.com/jazzband/djangorestframework-simplejwt]
+
+Simple JWT
+[https://django-rest-framework-simplejwt.readthedocs.io/en/latest/]
+
+# Video 12 - Part 3
+
+```
+$ pip install djangorestframework-simplejwt
+$ pip freeze > requirements.txt
+```
+
+Current: 6:11
 
