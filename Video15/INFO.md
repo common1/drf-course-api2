@@ -186,3 +186,53 @@ drf-spectacular - Django REST Framework API Documentation
 Documenting your API
 [https://www.django-rest-framework.org/topics/documenting-your-api/]
 
+drf-sectacular/github
+[https://github.com/tfranzel/drf-spectacular]
+
+drf-spectacular documentation
+[https://drf-spectacular.readthedocs.io/en/latest/]
+
+# Video 15 - Part 2
+
+```
+$ pip install drf-spectacular
+$ pip freeze > requirements.txt
+
+INSTALLED_APPS = [
+    # ALL YOUR APPS
+    'drf_spectacular',
+]
+
+REST_FRAMEWORK = {
+    # YOUR SETTINGS
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+}
+
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'E-Commerce API',
+    'DESCRIPTION': 'A simple Product & Order API that helps us to learn Django Rest Framework',
+    'VERSION': '1.0.0',
+    'SERVE_INCLUDE_SCHEMA': False,
+    # OTHER SETTINGS
+}
+
+$ ./manage.py spectacular --color --file schema.yml
+File: drf_course/urls.py
+...
+from drf_spectacular.views import SpectacularAPIView, SpectacularRedocView, SpectacularSwaggerView
+
+urlpatterns = [
+    ...
+    path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
+    # Optional UI:
+    path('api/schema/swagger-ui/', SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),
+    path('api/schema/redoc/', SpectacularRedocView.as_view(url_name='schema'), name='redoc'),
+]
+
+Browser
+http://localhost:8000/api
+http://localhost:8000/api/schema/
+http://localhost:8000/api/schema/swagger-ui/
+http://localhost:8000/api/schema/redoc/
+```
+
