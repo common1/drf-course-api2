@@ -273,7 +273,13 @@ Browser
 
 [https://django-filter.readthedocs.io/en/latest/guide/usage.html]
 
+# Video 16 - Part 2
+
 [https://django-filter.readthedocs.io/en/stable/ref/filterset.html#fields]
 
-Current: 10:41
+[http://localhost:8000/products/?price__gt=100]
+[http://localhost:8000/products/?price__lt=100]
+[http://localhost:8000/products/?price__range=100,350]
+[http://localhost:8000/products/?name__contains=lev]
+[http://localhost:8000/products/?name__iexact=digital%20camera]
 
