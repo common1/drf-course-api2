@@ -287,5 +287,13 @@ Browser
 
 [http://localhost:8000/products/?search=vision]
 
-Current: 3:03
+# Video 17 - Part 2
+
+[https://www.django-rest-framework.org/api-guide/filtering/#djangofilterbackend]
+[https://www.django-rest-framework.org/api-guide/filtering/#orderingfilter]
+
+[http://localhost:8000/products/?ordering=price]
+[http://localhost:8000/products/?ordering=-price]
+[http://localhost:8000/products/?ordering=name]
+[http://localhost:8000/products/?ordering=-name]
 
