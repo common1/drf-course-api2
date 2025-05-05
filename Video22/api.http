@@ -1,0 +1,64 @@
+GET http://localhost:8000/products/ HTTP/1.1
+
+###
+
+GET http://localhost:8000/products/2/ HTTP/1.1
+
+###
+
+DELETE http://localhost:8000/products/2/ HTTP/1.1
+
+###
+
+PUT http://localhost:8000/products/2/ HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ1OTY5MTgyLCJpYXQiOjE3NDU5Njg4ODIsImp0aSI6ImRjOGNhM2NiNjQzNjRjOWE5MjM3YmEyNmNlYzA3YmEyIiwidXNlcl9pZCI6MX0.9RU98bC1ex2-Tj91M8ohvShFGoJPQYpu6ofd4moptqA
+
+{
+  "description": "An amazing new tv",
+  "name": "Another Television",
+  "price": 300.00,
+  "stock": 14
+}
+
+###
+POST http://localhost:8000/products/ HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ1OTE4NzIzLCJpYXQiOjE3NDU5MTg0MjMsImp0aSI6Ijc1YjU0MWJlMzI1YTRiNDNiMDdkYzUyNzNjNmZhYjI4IiwidXNlcl9pZCI6MX0.xeJ-wPpDdzAPCuqih3nPptBUP9s6seMoTqm38wBafUs
+
+{
+  "name": "Television",
+  "price": 300.00,
+  "stock": 14,
+  "description": "An amazing new tv"
+}
+
+###
+
+POST http://localhost:8000/api/token/ HTTP/1.1
+Content-Type: application/json
+
+{
+  "username": "ubuntuuser",
+  "password": "ubuntuuser"
+}
+
+###
+
+POST http://localhost:8000/api/token/refresh/ HTTP/1.1
+Content-Type: application/json
+
+{
+  "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ2NDE3MTA1LCJpYXQiOjE3NDY0MTY4MDUsImp0aSI6IjBjMmFiZGIwNjlhNDQwYTZhNWYzNWYwYWE5ZGEyNWM5IiwidXNlcl9pZCI6Mn0.9A0wBvB5wbmZ02cN5AxXsQCJzW_7y7rOW7zW9lxCm2Q"
+}
+
+###
+
+GET http://localhost:8000/orders/ HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ2NDIzNzQ4LCJpYXQiOjE3NDY0MjM0NDgsImp0aSI6ImRmMmMyMmVmZmU0MDRiMmNhMzE3MDQzNzViMjM1MDJlIiwidXNlcl9pZCI6Mn0.gFgdxDP2_5zK3kSUj9RZRWfdElcDoSKYyI2bYH93Q9M
+
+###
+
+GET http://localhost:8000/orders/4b72f303-76c9-4ce6-9f8d-7d9b18edaa3e HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ2NDIzNzQ4LCJpYXQiOjE3NDY0MjM0NDgsImp0aSI6ImRmMmMyMmVmZmU0MDRiMmNhMzE3MDQzNzViMjM1MDJlIiwidXNlcl9pZCI6Mn0.gFgdxDP2_5zK3kSUj9RZRWfdElcDoSKYyI2bYH93Q9M
+
