@@ -19,7 +19,7 @@ class ProductListCreateAPIView(generics.ListCreateAPIView):
     serializer_class = ProductSerializer
     filterset_class = ProductFilter
     filter_backends = [
-        DjangoFilterBackend, 
+        DjangoFilterBackend,
         filters.SearchFilter,
         filters.OrderingFilter,
         InStockFilterBackend,

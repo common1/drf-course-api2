@@ -367,3 +367,7 @@ Creating Nested Objects | Overriding serializer create() method in Django REST F
 Updating Nested Objects | ModelSerializer update() method in Django REST Framework
 [https://www.youtube.com/watch?v=QtkES6O_ed4&list=PL-2EBeDYMIbTLulc9FSoAXhbmXpLq2l5t&index=24]
 
+# Video 24 - Part 2
+
+...
+

@@ -36,7 +36,7 @@ class OrderItemSerializer(serializers.ModelSerializer):
             'item_subtotal',
         )
 
-class OrderCreateSerializer(serializers.ModelSerializer):                
+class OrderCreateSerializer(serializers.ModelSerializer):
     class OrderItemCreateSerializer(serializers.ModelSerializer):
         class Meta:
             model = OrderItem
@@ -47,16 +47,19 @@ class OrderCreateSerializer(serializers.ModelSerializer):
 
     order_id = serializers.UUIDField(read_only=True)
     items = OrderItemCreateSerializer(many=True)
-    
+
+    def update(self, instance, validated_data):
+        pass
+
     def create(self, validated_data):
         orderitem_data = validated_data.pop('items')
         order = Order.objects.create(**validated_data)
-        
+
         for item in orderitem_data:
             OrderItem.objects.create(order=order, **item)
 
         return order
-    
+
     class Meta:
         model = Order
         fields = (
